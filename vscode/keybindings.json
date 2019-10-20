@@ -1,0 +1,49 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+t",
+       "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.selectTheme"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+=",
+        "command": "-editor.unfold",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+-",
+        "command": "-editor.fold",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+'",
+        "command": "workbench.action.showNextWindowTab"
+    }
+]

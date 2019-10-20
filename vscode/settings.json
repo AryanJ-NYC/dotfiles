@@ -1,0 +1,101 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "terminal.integrated.shell.osx": "zsh",
+  "editor.minimap.enabled": false,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "files.autoSave": "onFocusChange",
+  "workbench.editor.enablePreview": false,
+  "python.venvPath": "/Users/aryanjabbari/miniconda3/envs",
+  "[java]": {
+    "editor.tabSize": 4
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+  "[mdx]": {
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on"
+  },
+  "[php]": {
+    "editor.tabSize": 4
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "sync.gist": "d5640b575d6c730f15d2597d74f2192b",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.forceDownload": false,
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "editor.fontSize": 16,
+  "window.zoomLevel": 0,
+  "git.confirmSync": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/aryanjabbari/.vscode/extensions/gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\" -Xbootclasspath/a:\"/Users/aryanjabbari/.vscode/extensions/gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\"",
+  "explorer.autoReveal": false,
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.quoteStyle": "single",
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.alwaysShowStatus": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": true,
+  "window.nativeTabs": true,
+  "window.titleBarStyle": "native",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "vscode-great-icons",
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.fontFamily": "'Victor Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "python.jediEnabled": false,
+  "files.associations": {
+    "*.prisma": "graphql"
+  }
+}

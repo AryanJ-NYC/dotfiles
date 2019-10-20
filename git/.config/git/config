@@ -1,0 +1,16 @@
+[user]
+	name = Aryan Jabbari
+	email = AryanJabbari@gmail.com
+	username = AryanJ-NYC
+[core]
+	editor = code --wait
+	autocrlf = input
+[push]
+	default = simple
+[alias]
+	s = status -s
+	l = log --oneline
+[credential]
+	helper = osxkeychain
+[pull]
+	rebase = true

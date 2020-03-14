@@ -32,9 +32,6 @@
       }
     ]
   },
-  "files.associations": {
-    "*.prisma": "graphql"
-  },
   "terminal.integrated.shell.osx": "zsh",
   "editor.minimap.enabled": false,
   "emmet.syntaxProfiles": {

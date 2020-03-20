@@ -41,7 +41,7 @@
   },
   "files.autoSave": "onFocusChange",
   "workbench.editor.enablePreview": false,
-  "python.venvPath": "/Users/aryanjabbari/miniconda3/envs",
+  "workbench.settings.editor": "json",
   "[java]": {
     "editor.tabSize": 4
   },
@@ -61,17 +61,9 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "sync.gist": "d5640b575d6c730f15d2597d74f2192b",
-  "sync.autoDownload": true,
-  "sync.autoUpload": true,
-  "sync.forceDownload": false,
-  "sync.quietSync": false,
-  "sync.askGistName": false,
   "editor.fontSize": 16,
   "window.zoomLevel": 0,
   "git.confirmSync": false,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/aryanjabbari/.vscode/extensions/gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\" -Xbootclasspath/a:\"/Users/aryanjabbari/.vscode/extensions/gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\"",
@@ -94,8 +86,13 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.fontFamily": "'Victor Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
+  "python.languageServer": "Mcrosoft",
   "python.jediEnabled": false,
   "files.associations": {
     "*.prisma": "graphql"
-  }
+  },
+  "typescript.suggest.completeFunctionCalls": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 }

@@ -92,7 +92,11 @@
     "*.prisma": "graphql"
   },
   "typescript.suggest.completeFunctionCalls": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  },
+  }
 }

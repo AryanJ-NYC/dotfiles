@@ -11,6 +11,21 @@
 brew bundle --file=$HOME/dotfiles/macOS/Brewfile
 ```
 
+## [asdf](https://asdf-vm.com/)
+
+```bash
+# nodejs
+asdf plugin add nodejs
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+asdf install nodejs latest
+asdf global nodejs (asdf latest nodejs)
+
+# yarn
+asdf plugin add yarn
+asdf install yarn latest
+asdf global yarn (asdf latest yarn)
+```
+
 ## macOS
 
 ```bash

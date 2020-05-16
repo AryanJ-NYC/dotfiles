@@ -37,7 +37,8 @@
   "terminal.integrated.shell.osx": "zsh",
   "editor.minimap.enabled": false,
   "emmet.syntaxProfiles": {
-    "javascript": "jsx"
+    "javascript": "jsx",
+    "typescript": "tsx"
   },
   "files.autoSave": "onFocusChange",
   "workbench.editor.enablePreview": false,
@@ -45,6 +46,8 @@
   "[java]": {
     "editor.tabSize": 4
   },
+  "java.home": "/Users/aryanjabbari/.asdf/installs/java/adopt-openjdk-14+36",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "[markdown]": {
     "editor.wordWrap": "on"
   },
@@ -55,25 +58,22 @@
   "[php]": {
     "editor.tabSize": 4
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.fontSize": 16,
   "window.zoomLevel": 0,
   "git.confirmSync": false,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/aryanjabbari/.vscode/extensions/gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\" -Xbootclasspath/a:\"/Users/aryanjabbari/.vscode/extensions/gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\"",
   "explorer.autoReveal": false,
   "javascript.preferences.quoteStyle": "single",
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.quoteStyle": "single",
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "eslint.alwaysShowStatus": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "breadcrumbs.enabled": true,
@@ -83,14 +83,10 @@
   "workbench.iconTheme": "vscode-great-icons",
   "editor.formatOnSave": true,
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.fontFamily": "'Victor Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "python.languageServer": "Mcrosoft",
+  "python.languageServer": "Microsoft",
   "python.jediEnabled": false,
-  "files.associations": {
-    "*.prisma": "graphql"
-  },
   "typescript.suggest.completeFunctionCalls": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.smoothScrolling": true,
@@ -98,5 +94,9 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "workbench.colorTheme": "Atom One Dark"
 }

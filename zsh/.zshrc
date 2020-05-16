@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # include Z, yo
-. ~/z.sh
+. /usr/local/etc/profile.d/z.sh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -52,7 +52,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew git npm yarn z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(asdf brew git npm yarn z)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -83,8 +83,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias chrome='open -a "Google Chrome.app"'
-alias vscode='open -a "Visual Studio Code.app"'
 
 # custom plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export ASDF_DIR=$(brew --prefix asdf)
+export JAVA_HOME=$(asdf where java)
+
+eval $(thefuck --alias)

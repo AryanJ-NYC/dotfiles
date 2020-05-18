@@ -46,6 +46,9 @@ defaults write com.apple.Dock showhidden -bool true
 # Change minimize window animation
 defaults write com.apple.Dock mineffect -string "scale"
 
+# Hide recent apps
+defaults write com.apple.dock show-recents -bool FALSE
+
 #
 # Mouse/Trackpad
 #
@@ -53,6 +56,7 @@ defaults write com.apple.Dock mineffect -string "scale"
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.trackpad.orientation TrackpadOrientationMode 0
 
 
 #

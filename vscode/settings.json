@@ -1,6 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -46,8 +45,6 @@
   "[java]": {
     "editor.tabSize": 4
   },
-  "java.home": "/Users/aryanjabbari/.asdf/installs/java/adopt-openjdk-14+36",
-  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "[markdown]": {
     "editor.wordWrap": "on"
   },
@@ -80,13 +77,11 @@
   "window.nativeTabs": true,
   "window.titleBarStyle": "native",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "vscode-great-icons",
   "editor.formatOnSave": true,
   "editor.suggestSelection": "first",
   "editor.fontFamily": "'Victor Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "python.languageServer": "Microsoft",
-  "python.jediEnabled": false,
   "typescript.suggest.completeFunctionCalls": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.smoothScrolling": true,
@@ -98,5 +93,28 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "workbench.colorTheme": "Atom One Dark"
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "vscode-great-icons",
+  "typescript.tsserver.log": "verbose",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

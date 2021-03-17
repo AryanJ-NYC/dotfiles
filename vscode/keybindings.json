@@ -6,7 +6,7 @@
     },
     {
         "key": "cmd+t",
-       "command": "workbench.action.files.newUntitledFile"
+        "command": "workbench.action.files.newUntitledFile"
     },
     {
         "key": "ctrl+`",
@@ -45,5 +45,28 @@
     {
         "key": "cmd+'",
         "command": "workbench.action.showNextWindowTab"
+    },
+    {
+        "key": "cmd+v",
+        "command": "-execPaste"
+    },
+    {
+        "key": "cmd+v",
+        "command": "-markdown.extension.editing.paste",
+        "when": "editorHasSelection && editorTextFocus && editorLangId == 'markdown'"
+    },
+
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
     }
 ]

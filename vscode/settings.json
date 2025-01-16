@@ -1,18 +1,18 @@
-// Place your settings in this file to overwrite the default settings
 {
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "scope": [
-          //following will be in italic (=FlottFlott)
           "comment",
-          "entity.name.type.class", //class names
-          "keyword", //import, export, return…
-          "constant", //String, Number, Boolean…, this, super
-          "storage.modifier", //static keyword
-          "storage.type.class.js" //class keyword
+          "entity.name.type.class",
+          "keyword",
+          "constant",
+          "storage.modifier",
+          "storage.type.class.js"
         ],
         "settings": {
           "fontStyle": "italic"
@@ -20,7 +20,6 @@
       },
       {
         "scope": [
-          //following will be excluded from italics (VSCode has some defaults for italics)
           "invalid",
           "keyword.operator",
           "constant.numeric.css",
@@ -34,7 +33,7 @@
       }
     ]
   },
-  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "editor.minimap.enabled": false,
   "emmet.syntaxProfiles": {
     "javascript": "jsx",
@@ -46,8 +45,6 @@
   "[java]": {
     "editor.tabSize": 4
   },
-  "java.home": "/Users/aryanjabbari/.asdf/installs/java/adopt-openjdk-14+36",
-  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "[markdown]": {
     "editor.wordWrap": "on"
   },
@@ -59,7 +56,6 @@
     "editor.tabSize": 4
   },
   "editor.fontSize": 16,
-  "window.zoomLevel": 0,
   "git.confirmSync": false,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
@@ -68,89 +64,56 @@
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.quoteStyle": "single",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "typescript.updateImportsOnFileMove.enabled": "always",
   "breadcrumbs.enabled": true,
   "window.nativeTabs": true,
   "window.titleBarStyle": "native",
-  "workbench.startupEditor": "newUntitledFile",
   "editor.formatOnSave": true,
   "editor.suggestSelection": "first",
   "editor.fontFamily": "'Victor Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "python.languageServer": "Microsoft",
-  "python.jediEnabled": false,
   "typescript.suggest.completeFunctionCalls": true,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.cursorBlinking": "smooth",
-  "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "workbench.colorTheme": "Atom One Dark",
-  "editor.renameOnType": true,
+  "editor.linkedEditing": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["Classes \\=([^;]*);", "'([^']*)'"],
+    ["Classes \\=([^;]*);", "\"([^\"]*)\""],
+    ["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"],
+    ["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"]
+  ],
   "workbench.iconTheme": "vscode-great-icons",
   "typescript.tsserver.log": "verbose",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
-  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/aryanjabbari/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
-  "peacock.favoriteColors": [
-    {
-      "name": "Angular Red",
-      "value": "#dd0531"
-    },
-    {
-      "name": "Azure Blue",
-      "value": "#007fff"
-    },
-    {
-      "name": "JavaScript Yellow",
-      "value": "#f9e64f"
-    },
-    {
-      "name": "Mandalorian Blue",
-      "value": "#1857a4"
-    },
-    {
-      "name": "Django Green",
-      "value": "#092e20"
-    },
-    {
-      "name": "Node Green",
-      "value": "#215732"
-    },
-    {
-      "name": "React Blue",
-      "value": "#61dafb"
-    },
-    {
-      "name": "Something Different",
-      "value": "#832561"
-    },
-    {
-      "name": "Svelte Orange",
-      "value": "#ff3d00"
-    },
-    {
-      "name": "Vue Green",
-      "value": "#42b883"
-    }
-  ],
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "explorer.confirmDelete": false,
+  "editor.inlineSuggest.enabled": true,
+  "githubPullRequests.pullBranch": "never",
+  "editor.glyphMargin": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editor.empty.hint": "hidden",
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "cursor.cpp.disabledLanguages": ["scminput", "markdown"],
+  "workbench.colorTheme": "Default Dark+",
+  "cursor.general.gitGraphIndexing": "enabled",
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "always"
 }

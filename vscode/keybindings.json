@@ -1,72 +1,113 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "cmd+1",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "cmd+t",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+`",
-        "command": "-workbench.action.selectTheme"
-    },
-    {
-        "key": "shift+cmd+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "-editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+cmd+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "-editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+=",
-        "command": "-editor.unfold",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+-",
-        "command": "-editor.fold",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+'",
-        "command": "workbench.action.showNextWindowTab"
-    },
-    {
-        "key": "cmd+v",
-        "command": "-execPaste"
-    },
-    {
-        "key": "cmd+v",
-        "command": "-markdown.extension.editing.paste",
-        "when": "editorHasSelection && editorTextFocus && editorLangId == 'markdown'"
-    },
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "shift+cmd+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+=",
+    "command": "-editor.unfold",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-editor.fold",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+'",
+    "command": "workbench.action.showNextWindowTab"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-execPaste"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-markdown.extension.editing.paste",
+    "when": "editorHasSelection && editorTextFocus && editorLangId == 'markdown'"
+  },
 
-    {
-        "key": "shift+cmd+e",
-        "command": "-workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
-    },
-    {
-        "key": "shift+cmd+e",
-        "command": "workbench.action.openRecent"
-    },
-    {
-        "key": "ctrl+r",
-        "command": "-workbench.action.openRecent"
-    }
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "shift shift",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "shift shift",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "-workbench.action.gotoSymbol",
+    "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "-editor.action.accessibleViewGoToSymbol",
+    "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "-workbench.action.terminal.openDetectedLink",
+    "when": "terminalFocus && terminalHasBeenCreated"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-editor.fold",
+    "when": "editorFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+=",
+    "command": "-editor.unfold",
+    "when": "editorFocus && foldingEnabled"
+  }
 ]
